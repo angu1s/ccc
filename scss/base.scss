@@ -35,3 +35,19 @@ a {
   text-decoration: none;
 
 }
+
+.section-heading {
+
+  margin: 20px 0;
+
+  text-align: center;
+
+  h3 {
+
+    color: map-get($colors, white);
+
+    font-size: 30px;
+
+  }
+
+}
