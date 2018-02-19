@@ -1,1 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Ubuntu:400,500');
+
+@import './vars.scss';
+@import './shared/buttons.scss';
+@import './shared/header.scss';
 @import './base.scss';
+
+@import './Home/banner.scss';
+@import './Home/why.scss';

@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500|Ubuntu:400,500);.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 27px 28px 28px 27px/27px 27px 28px 28px;
+  background-color: #04a997; }
+  .btn-glow {
+    box-shadow: 0 0 18px rgba(1, 149, 133, 0.75); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 10; }
+  .header .nav {
+    padding-left: 20px;
+    border-radius: 28px/27px 27px 28px 28px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.19);
+    border: solid 1px rgba(255, 255, 255, 0.23); }
+    .header .nav .nav-link {
+      color: #8689a0;
+      margin-right: 40px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: all .2s ease-in-out; }
+      .header .nav .nav-link:hover {
+        color: #fff; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #000; }
+
+h1, h2, h3, h4, h5, h6, p, body {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif; }
+
+.container {
+  max-width: 1200px;
+  width: 98%;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+a {
+  display: inline-block;
+  text-decoration: none; }
+
+.banner {
+  position: relative;
+  background-color: #000;
+  height: 750px; }
+  .banner .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; }
+  .banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/banner-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    opacity: .74; }
+  .banner:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url("/assets/shadow.png");
+    z-index: 5; }
+  .banner-particles-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 700px;
+    width: 700px;
+    border-radius: 500px;
+    overflow: hidden;
+    opacity: .4;
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+  .banner-particles-left, .banner-particles-right {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 120px;
+    filter: blur(3px); }
+  .banner-particles-left {
+    left: 0; }
+  .banner-particles-right {
+    right: 0; }
+  .banner-content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    z-index: 5; }
+    .banner-content h1 {
+      margin-bottom: 10px;
+      color: #fff;
+      font-size: 40px;
+      line-height: 50px; }
+    .banner-content h3 {
+      margin: 0 auto 30px auto;
+      max-width: 500px;
+      width: 100%;
+      line-height: 20px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #8689a0; }

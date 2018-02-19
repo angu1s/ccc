@@ -1,0 +1,22 @@
+.btn {
+
+  display: inline-block;
+
+  padding: 15px 35px;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+
+
+  color: #fff;
+  border-radius: 27px 28px 28px 27px/27px 27px 28px 28px;
+  background-color: #04a997;
+  
+  &-glow {
+    
+    box-shadow: 0 0 18px rgba(1,149,133,.75);
+
+  }
+
+}
