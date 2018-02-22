@@ -1,7 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
 
   font-family: 'Roboto', sans-serif;
   background: #000;
+
+  overflow-x: hidden;
 
 }
 
@@ -20,12 +27,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
 
+  position: relative;
+
   max-width: 1200px;
   width: 98%;
 
   padding: 0 20px;
 
   margin: 0 auto;
+
+  z-index: 10;
 
 }
 
@@ -34,6 +45,11 @@ a {
   display: inline-block;
   text-decoration: none;
 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .section-heading {
@@ -48,6 +64,67 @@ a {
 
     font-size: 30px;
 
+    margin-bottom: 20px;
+
+    @media (max-width: 750px) {
+
+      font-size: 24px;
+
+    }
+
   }
+
+  p {
+
+    max-width: 750px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    color: map-get($colors, text);
+    line-height: 30px;
+
+    font-size: 18px;
+
+    @media (max-width: 750px) {
+
+      font-size: 16px;
+      line-height: 27px;
+
+    }
+
+  }
+
+}
+
+.section-footer {
+
+
+    max-width: 750px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    color: map-get($colors, text);
+    line-height: 30px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    @media (max-width: 750px) {
+
+      font-size: 16px;
+      line-height: 27px;
+
+    }
+
+
+}
+
+button {
+
+  border: none;
+  cursor: pointer;
 
 }

@@ -1,0 +1,158 @@
+.how-can-help {
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  min-height: 700px;
+
+  &:before {
+
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 150px;
+
+    background: url('/assets/shadow.png');
+
+    transform: rotateZ(180deg);
+
+    z-index: 1;
+
+  }
+
+  &:after {
+
+    content: '';
+
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+
+    width: 100%;
+    height: 150px;
+
+    background: url('/assets/shadow.png');
+
+    z-index: 1;
+
+  }
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background: url('/assets/world-sparkles.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    opacity: .4;
+  }
+
+  &-benefits {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    margin: 30px auto;
+
+    width: 100%;
+
+    @media (max-width: 1280px) {
+
+      width: 768px;
+
+    }
+
+    @media (max-width: 860px) {
+
+      width: 100%;
+      flex-wrap: wrap;
+
+    }
+
+    &-item {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      width: 22%;
+
+      padding: 10px;
+
+      background-color: rgba(0,0,0,.45);
+	    border: solid 1px rgba(1,149,133,.34);
+
+      transition: all .2s ease-in-out;
+
+      @media (max-width: 1280px) {
+
+        text-align: center;
+
+        flex-direction: column;
+
+      }
+
+      @media (max-width: 860px) {
+
+        width: 49%;
+        margin: 10px 0;
+
+      }
+
+      @media (max-width: 480px) {
+
+        width: 100%;
+
+      }
+
+      &:hover {
+
+        background-color: #070912;
+        box-shadow: 0 0 18px rgba(1,149,133,.75);
+        border: solid 1px #019585;
+
+      }
+      
+
+      span {
+
+        margin-left: 10px;
+
+        color: map-get($colors, white);
+        font-size: 18px;
+        font-weight: 500;
+
+        text-transform: uppercase;
+
+        @media (max-width: 1280px) {
+
+          margin-left: 0;
+          margin-top: 10px;
+
+        }
+
+        @media (max-width: 768px) {
+
+          font-size: 15px;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

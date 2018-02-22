@@ -1,0 +1,119 @@
+.team {
+
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+
+  padding: 80px 0 80px 0;
+
+  &-quote {
+
+    max-width: 360px;
+    width: 100%;
+
+    margin: 30px auto;
+
+    color: map-get($colors, text);
+    font-style: italic;
+
+    text-align: center;
+
+  }
+
+  &-persons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 50px 0;
+
+    &-person {
+
+      width: 25%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      @media (max-width: 820px) {
+
+        width: 50%;
+        margin: 10px 0;
+
+      }
+
+      @media (max-width: 480px) {
+
+        width: 100%;
+
+      }
+
+      .image {
+
+        width: 120px;
+        height: 120px;
+
+        border-radius: 100px;
+
+        overflow: hidden;
+
+        
+        transition: all .2s ease-in-out;
+        
+        &:hover {
+          
+          background-position: center -15px;
+          
+        }
+        
+      }
+      
+      &.antonio .image {
+        background: url('/assets/antonio.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center -10px;
+      }
+
+      &.david .image {
+        background: url('/assets/david.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center -10px;
+      }
+
+      &.ivan .image {
+        background: url('/assets/ivan.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center -10px;
+      }
+
+      &.marko .image {
+        background: url('/assets/marko.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center -10px;
+      }
+
+
+        
+      a, span {
+        
+        color: map-get($colors, text);
+        margin-top: 10px;
+        user-select: none;
+
+        img {
+          display: inline-block;
+          width: 12px;
+        }
+
+      }
+
+    }
+
+  }
+
+}

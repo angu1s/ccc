@@ -13,6 +13,19 @@
 
   z-index: 10;
 
+  @media (max-width: 1300px) {
+
+    justify-content: center;
+
+  }
+
+  @media (max-width: 990px) {
+
+    justify-content: space-between;
+
+  }
+
+
   .nav {
 
     padding-left: 20px;
@@ -21,6 +34,84 @@
     background-color: rgba(black, .7);
     box-shadow: 0 2px 2px rgba(0,0,0,.19);
     border: solid 1px rgba(255,255,255,.23);
+
+    &.fixed {
+
+      display: flex;
+
+    }
+
+    @media (max-width: 990px) {
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 0;
+
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      height: 100%;
+
+      border: none;
+      box-shadow: none;
+
+      z-index: 9999;
+
+      background: rgba(black, 0.96);
+
+
+    }
+
+    &-close {
+
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      width: 48px;
+
+      cursor: pointer;
+
+      transition: all .2s ease-in-out;
+      
+      @media (max-width: 990px) {
+
+        display: inline-block;
+
+      }
+      &:hover {
+
+        transform: rotateZ(30deg);
+
+      }
+
+    }
+
+    &-show {
+
+      display: none;
+
+      width: 48px;
+
+      margin-right: 40px;
+
+      cursor: pointer;
+
+      transition: all .2s ease-in-out;
+
+      @media (max-width: 990px) {
+
+        display: inline-block;
+
+      }
+
+    }
+
 
     .nav-link {
 
@@ -34,6 +125,13 @@
       text-transform: uppercase;
 
       transition: all .2s ease-in-out;
+
+      @media (max-width: 990px) {
+
+        margin: 20px 0;
+        font-size: 18px;
+
+      }
 
       &:hover {
 
